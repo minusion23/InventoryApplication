@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="save">Save</string>
+    <string name="toolsinentorycontent">Inventory content</string>
+    <string name="tools_row_numbers">Number of rows in the app is</string>
+    <string name="product_name">Product name</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+    <string name="product_name_edit">Product Name</string>
+    <string name="price_edit">Price</string>
+    <string name="quantity_edit">Quantity</string>
+    <string name="supplier_name_edit">Supplier Name</string>
+    <string name="supplier_phone_nr_edit">Supplier phone nr</string>
+    <string name="action_delete">Delete</string>
+    <string name="menu_delete">Delete all entries</string>
+    <string name="quantity_test_text">222222222222</string>
+    <string name="sell_button">Sell</string>
+    <string name="list_item_quantity_text">Quantity</string>
+    <string name="list_item_product_price_text">Price</string>
+    <string name="test_text_product_quantity">20222222q22222</string>
+    <string name="decrease_button_text">-</string>
+    <string name="add_button_text">+</string>
+    <string name="call_supplie_button">Call supplier</string>
+    <string name="call_supplier">Call supplier</string>
+    <string name="plus_sing_button_add">+</string>
+    <string name="empty_view_text">No inventory items are currently in stock</string>
+    <string name="failed_deletion_toast">Deletion failed</string>
+    <string name="toast_deletion_successful">Deletion was successful.</string>
+    <string name="confirm_deletion_text">Delete the items?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+</resources>

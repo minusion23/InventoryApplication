@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/price_text"
+            style="@style/CategoryStyle"
+            android:text="@string/price"
+            app:layout_constraintBottom_toTopOf="@+id/quantity_text"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/product_name_text"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/product_name_text"
+            style="@style/CategoryStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/land_product_name_height"
+            android:text="@string/product_name"
+            app:layout_constraintEnd_toStartOf="@+id/edit_product_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/quantity_text"
+            style="@style/CategoryStyle"
+            android:text="@string/quantity"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/price_text" />
+
+        <TextView
+            android:id="@+id/supplier_name_text"
+            style="@style/CategoryStyle"
+            android:layout_width="@dimen/land_supplier_name_width"
+            android:text="@string/supplier_name"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/supplier_phone_text"
+            style="@style/CategoryStyle"
+            android:text="@string/supplier_phone_number"
+            app:layout_constraintEnd_toEndOf="@+id/supplier_name_text"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_name_text" />
+
+        <EditText
+            android:id="@+id/edit_product_name"
+            style="@style/EditorFieldStyle"
+            android:layout_width="@dimen/null_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/typical_margin"
+            android:hint="@string/product_name_edit"
+            android:inputType="textCapWords"
+            android:singleLine="false"
+            app:layout_constrainedHeight="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/product_name_text"
+            app:layout_constraintTop_toTopOf="@+id/product_name_text" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            style="@style/EditorFieldStyle"
+            android:layout_width="@dimen/null_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/price_edit"
+            android:inputType="textCapWords"
+            app:layout_constrainedHeight="false"
+            app:layout_constraintEnd_toEndOf="@+id/edit_product_name"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/edit_product_name"
+            app:layout_constraintTop_toTopOf="@+id/price_text" />
+
+        <EditText
+            android:id="@+id/edit_quantity"
+            style="@style/EditorFieldStyle"
+            android:layout_width="@dimen/null_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/typical_margin"
+            android:hint="@string/quantity_edit"
+            android:inputType="textCapWords"
+            app:layout_constrainedHeight="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/edit_product_name"
+            app:layout_constraintTop_toTopOf="@+id/quantity_text" />
+
+        <EditText
+            android:id="@+id/edit_supplier_name"
+            style="@style/EditorFieldStyle"
+            android:layout_width="@dimen/null_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:hint="@string/supplier_name_edit"
+            android:inputType="textCapWords|textMultiLine"
+            android:maxLines="3"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edit_quantity"
+            app:layout_constraintTop_toTopOf="@+id/supplier_name_text" />
+
+        <EditText
+            android:id="@+id/edit_supplier_phone_number"
+            style="@style/EditorFieldStyle"
+            android:layout_width="@dimen/null_width"
+            android:layout_height="@dimen/null_width"
+            android:hint="@string/supplier_phone_nr_edit"
+            android:inputType="textCapWords|textMultiLine|phone"
+            android:maxLines="2"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/supplier_phone_text"
+            app:layout_constraintEnd_toEndOf="@+id/edit_supplier_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edit_supplier_name"
+            app:layout_constraintTop_toTopOf="@+id/supplier_phone_text" />
+
+        <Button
+            android:id="@+id/buttoncall"
+            style="@style/CustomButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:text="@string/call_supplier"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/edit_supplier_phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_phone_text"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/land_add_button_width"
+            android:layout_height="@dimen/land_add_button_height"
+            android:layout_marginEnd="@dimen/land_add_button_marginend"
+            android:text="@string/decrease_button_text"
+            app:layout_constraintEnd_toStartOf="@+id/buttonadd"
+            app:layout_constraintStart_toStartOf="@+id/edit_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/edit_quantity" />
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="@dimen/land_addButton_width"
+            android:layout_height="@dimen/land_addButton_height"
+            android:text="@string/add_button_text"
+            app:layout_constraintEnd_toEndOf="@+id/edit_quantity"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/edit_quantity" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/bigger_margin" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

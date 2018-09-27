@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fabBottomMargin">72dp</dimen>
+    <dimen name="fabEndMargin">44dp</dimen>
+    <dimen name="supplier_phone_text_width">120dp</dimen>
+    <dimen name="typical_margin">8dp</dimen>
+
+    <dimen name="listdivider">2dp</dimen>
+    <dimen name="borde_width">2dp</dimen>
+    <dimen name="borderRadius">10dp</dimen>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="list_item_quantity_width">62dp</dimen>
+    <dimen name="list_item_product_price_width">49dp</dimen>
+    <dimen name="sell_button_widht">61dp</dimen>
+    <dimen name="sell_button_height">40dp</dimen>
+    <dimen name="null_width">0dp</dimen>
+    <dimen name="price_text_width">148dp</dimen>
+    <dimen name="product_name_width">149dp</dimen>
+    <dimen name="quantity_text_width">148dp</dimen>
+    <dimen name="supplier_name_text_width">145dp</dimen>
+    <dimen name="edit_product_name_width">175dp</dimen>
+    <dimen name="decrease_button_width">76dp</dimen>
+    <dimen name="decrease_button_heiht">37dp</dimen>
+    <dimen name="addbutton_width">73dp</dimen>
+    <dimen name="add_bttonheight">38dp</dimen>
+    <dimen name="land_product_name_height">32dp</dimen>
+    <dimen name="land_supplier_name_width">145dp</dimen>
+    <dimen name="bigger_margin">16dp</dimen>
+    <dimen name="land_add_button_width">76dp</dimen>
+    <dimen name="land_add_button_height">37dp</dimen>
+    <dimen name="land_add_button_marginend">52dp</dimen>
+    <dimen name="land_addButton_width">73dp</dimen>
+    <dimen name="land_addButton_height">38dp</dimen>
+    <dimen name="bigger_text_size">16sp</dimen>
+    <dimen name="elevation_fab_text">6dp</dimen>
+    <dimen name="fab_text_width">20dp</dimen>
+    <dimen name="fab_text_height">23dp</dimen>
+    <dimen name="fab_bottom_margin">24dp</dimen>
+    <dimen name="fab_end_margin">16dp</dimen>
+    <dimen name="empty_view_margin_bottom">510dp</dimen>
+    <dimen name="empty_view_margin_top">242dp</dimen>
+    <dimen name="standard_padding">8dp</dimen>
+</resources>
